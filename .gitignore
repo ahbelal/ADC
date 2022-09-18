@@ -1,0 +1,12 @@
+FreeRTOS
+FreeRTOS-Plus
+Tracelyzer
+ADC.X/build
+ADC.X/dist
+ADC.X/docs/
+ADC.X/nbproject/Makefile-*
+ADC.X/nbproject/Package-*
+ADC.X/nbproject/private
+include/Communication/version.h
+ADC.X/.generated_files/
+ADC.X/Makefile
