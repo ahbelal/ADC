@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>../include/adc.h</itemPath>
+      <itemPath>../include/ltc1867lign.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -13,7 +14,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>adc.c</itemPath>
+      <itemPath>ltc1867lign.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -193,7 +194,7 @@
       </C32CPP>
       <C32Global>
         <property key="common-include-directories"
-                  value="..\include;..\FreeRTOS\Source\include;..\FreeRTOS\Source\portable\MPLAB\PIC32MX"/>
+                  value="..\..\FreeRTOS\Source\include;..\..\FreeRTOS\Source\portable\MPLAB\PIC32MX;..\..\include;..\include;..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\include;..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\protocols\include;..\..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\portable\Compiler\GCC;..\..\CommunicationLibrary\inc;..\..\Pic32PeripheralLibrary"/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
         <property key="mdtcm" value=""/>

@@ -1,12 +1,20 @@
 
 /* Libraries */
 #include "adc.h"
+#include "ltc1867lign.h"
 #include "HelperFunctions.h"
-#include "subsystem.h"
+//#include "subsystem.h"
 
 /* Definitions */
 
 /* Variables */
+static BaseType_t adcInterruptNotifyTail;
+static BaseType_t adcInterruptNotifyHead;
+static BaseType_t adcContInterruptNotifyTail;
+static BaseType_t adcContInterruptNotifyHead;
+static BaseType_t adcMsgNotifyTail;
+static BaseType_t adcMsgNotifyHead;
+    
 static adc_t adc ;
 SpiComm_t spiCommunication;
 
@@ -20,7 +28,8 @@ SpiComm_t spiCommunication;
 static void InitAdc ( void );
 static void InitAdcChannel ( void );
 static void InitAdcCommunication ( void );
-
+static operation_status_t GetAdc ( message_t * pMessage );
+    
 /**
  * @brief ADC read.
  * @details Function to read from a single ADC channel.
@@ -142,7 +151,7 @@ portTASK_FUNCTION ( AdcTask, pParams )
     }
 }
 
-operation_status_t GetAdc ( message_t * pMessage )
+static operation_status_t GetAdc ( message_t * pMessage )
 {
     /* Variables */
     operation_status_t  result ;
