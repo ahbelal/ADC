@@ -194,7 +194,7 @@
       </C32CPP>
       <C32Global>
         <property key="common-include-directories"
-                  value="include;..\FreeRTOS\Source\include;..\FreeRTOS\Source\portable\MPLAB\PIC32MX;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\include;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\protocols\include;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\portable\Compiler\GCC;..\CommunicationLibrary\inc;..\Pic32PeripheralLibrary"/>
+                  value="include;..\include;..\FreeRTOS\Source\include;..\FreeRTOS\Source\portable\MPLAB\PIC32MX;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\include;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\protocols\include;..\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\portable\Compiler\GCC;..\CommunicationLibrary\inc;..\Pic32PeripheralLibrary"/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
         <property key="mdtcm" value=""/>
