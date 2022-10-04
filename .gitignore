@@ -1,12 +1,12 @@
 FreeRTOS
 FreeRTOS-Plus
 Tracelyzer
-ADC.X/build
-ADC.X/dist
-ADC.X/docs/
-ADC.X/nbproject/Makefile-*
-ADC.X/nbproject/Package-*
-ADC.X/nbproject/private
+build
+dist
+docs/
+nbproject/Makefile-*
+nbproject/Package-*
+nbproject/private
+.generated_files/
 include/Communication/version.h
-ADC.X/.generated_files/
 
